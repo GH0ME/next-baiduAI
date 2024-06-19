@@ -9,7 +9,7 @@ const Game = () => {
       stopLoading()
     })
   },[])
-  return <div style={{width:'100%',height:'95vh',display:'flex',justifyContent:'center',alignItems:'center',fontSize:'2rem',fontWeight:'700'}}>
+  return <div style={{width:'100%',height:'90vh',display:'flex',justifyContent:'center',alignItems:'center',fontSize:'2rem',fontWeight:'700'}}>
     🙂正在开发中...
   </div>
 }

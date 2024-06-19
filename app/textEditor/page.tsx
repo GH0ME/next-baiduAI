@@ -1,6 +1,6 @@
 'use client'
 import dynamic from "next/dynamic";
-import React, { Suspense, useState } from "react";
+import React, { useState } from "react";
 // import MyEditor from "../components/MyEditor";
 import '../styles/editor.css'
 const MyEditor = dynamic(

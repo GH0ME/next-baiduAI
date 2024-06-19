@@ -266,7 +266,7 @@ const MicrophoneAccess = () => {
 
   return (
     <div>
-        <div style={{position:'relative',maxHeight:'95vh'}}>
+        <div style={{position:'relative',maxHeight:'90vh'}}>
           <Tip 
             title='简单介绍'
             content='该模型为作者专门为自己训练的AI，所以会称呼我“吴哥”。简单测试使用，目标以后能做到每个人都能在我这简便创建属于自己的AI助手。'
@@ -274,7 +274,7 @@ const MicrophoneAccess = () => {
             left={300}
           />
           <div className='inner'/>
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 300 300" className="box-waves">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 300 250" className="box-waves">
             <path d={wave}></path>
             <path d={wave}></path>
             <path d={wave}></path>
@@ -286,8 +286,8 @@ const MicrophoneAccess = () => {
             <Image  
               id='active-btn'
               src={recordingStatus==='recording'?activeIcon:notActiveIcon} 
-              width={260}
-              height={190}
+              width={200}
+              height={150}
               priority
               alt='Recording'
               onClick={recordingStatus==='recording'?stopRecording:startRecording}

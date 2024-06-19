@@ -90,8 +90,9 @@ const MyEditor = ({html, setHtml}:editorProps)=> {
     });
 
     //完成操作
+    state.current = !state.current
+    setStatus(state.current)
     setLoading(false);
-
     setHtml(result.result);
   };
 
@@ -117,7 +118,7 @@ const MyEditor = ({html, setHtml}:editorProps)=> {
           }}
           onChange={(editor) => setHtml(editor.getHtml())}
           mode="default"
-          style={{ height: '75vh', overflowY: 'hidden' }}
+          style={{ height: '70vh', overflowY: 'hidden' }}
         />
       </div>
       <div className={`box-input ${status ? 'show-input' : 'hidden-input'}`}>

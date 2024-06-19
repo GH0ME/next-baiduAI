@@ -15,6 +15,7 @@
 .show-input {
   top: 45vh;
   opacity: 1;
+  box-shadow: 4px 4px 8px  rgba(0, 0, 0, 0.4)
 }
 
 .hidden-input {
@@ -65,22 +66,27 @@
 
 #showPart{
   width: 50%;
-  border: 2px solid #000000;
+  border: 1px solid #00000075;
 }
 
 .tip-tab {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #472828;
   position: absolute;
   bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  column-gap: 1rem;
 }
 
 .tip-tab > button {
   margin: 0;
   padding: 10px 20px;
   font-size: 1.5rem;
-  background: rgb(28, 28, 255);
+  background: rgb(63, 63, 255);
   color: #ffffff;
   font-weight: 600;
 }
