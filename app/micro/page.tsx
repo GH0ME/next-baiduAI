@@ -45,7 +45,7 @@ const MicrophoneAccess = () => {
 
   const initMicroPhone = ()=>{
     if(audioContext) return
-    console.log('请求麦克风权限');
+    // console.log('请求麦克风权限');
 
     const context = new (window.AudioContext||window.webkitAudioContext)()
     const reSampler = new Resampler(context.sampleRate, 16000, 1, BUFSIZE)

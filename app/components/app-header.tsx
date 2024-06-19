@@ -2,13 +2,23 @@
 import { appConfig } from "../config";
 import NavLink from "./nav-link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Switch from "./switch";
 import { DetectiveSvg } from "../../util/getSvg";
 
 const AppHeader = () => {
   const pathName = usePathname()
   const [model,setModel] = useState<'dark'|'light'>('dark')
+  useEffect(()=>{
+    const theme = localStorage.getItem('theme') as "dark" | "light"
+    if(theme){
+      localStorage.setItem('theme',theme)
+      setModel(theme)
+    }else{
+      localStorage.setItem('theme',model)
+    }
+  },[])
+
   return (<header className={`${model==='dark'?'dark-header':'light-header'}${pathName==='/micro'?' micro-header':''}${pathName==='/'?' home-header':''}`} style={{zIndex:100}}>
       <div>
         <span>{

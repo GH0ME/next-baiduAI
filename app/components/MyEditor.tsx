@@ -129,7 +129,7 @@ const MyEditor = ({html, setHtml}:editorProps)=> {
             value.current = e.target.value;
           }}
           onKeyDown={(e) => {
-            console.log({ value: value.current });
+            // console.log({ value: value.current });
             e.code === 'Enter' && askAI(value.current);
           }}
         />

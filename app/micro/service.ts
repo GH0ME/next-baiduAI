@@ -6,7 +6,7 @@ export const uploadAudio = async(base64:string,len:number)=>{
   const AK = process.env.NEXT_PUBLIC_SPEECH_API_KEY || ''
   const SK = process.env.NEXT_PUBLIC_SPEECH_SECRET_KEY || ''
   const token = await apiHttpClient('getAccessToken',{AK,SK})
-  console.log({token});
+  // console.log({token});
   
   const body = JSON.stringify({
     "format": "pcm",
