@@ -1,0 +1,19 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    // https://github.com/airbnb/babel-plugin-inline-react-svg/issues/107#issuecomment-840413948
+    [
+      "inline-react-svg",
+      {
+        "svgo": {
+          "plugins": [
+            {
+              "name": "removeViewBox",
+              "active": false
+            }
+          ]
+        }
+      }
+    ]
+  ]
+}

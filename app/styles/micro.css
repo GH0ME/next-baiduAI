@@ -1,0 +1,100 @@
+.spline-box {
+  /* background-color:#3a3a3a; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.set-role {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.set-role-inp {
+  width: 250px;
+  height: 40px;
+  font-size: 1.5rem;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+#ask-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+
+.box-waves {
+ background-color: #000000;
+ /* fill: #5e95fa; */
+ width: 100%;
+ height: 80%;
+}
+
+/* .box-waves > path {
+  transition: all 0.5s ease-in-out;
+} */
+
+.spline {
+  width: 600px !important;
+  height: 600px !important;
+  /* float: left !important; */
+}
+
+.box-waves path:nth-child(1) {
+  fill: #a0edff;
+  transform: translate(-300px, -60px);
+  z-index: 3;
+  animation: wave-move1 4s linear infinite;
+ }
+
+ .box-waves path:nth-child(2) {
+  fill: rgba(40, 187, 255, 0.5);
+  transform: translate(0, -60px);
+  z-index: 2;
+  animation: wave-move2 8s linear infinite;
+ }
+
+.box-waves path:nth-child(3) {
+  fill: #2084cc;
+  transform: translate(-300px, -60px);
+  z-index: 1;
+  animation: wave-move1 8s linear infinite;
+ }
+ 
+@keyframes wave-move1 {
+  100% {
+    transform: translate(0, -60px);
+  }
+ }
+
+ @keyframes wave-move2 {
+  100% {
+    transform: translate(-300px, -60px);
+  }
+ }
+
+.inner {
+  width: 100%;
+  background: #2084cc;
+  transition: all 0.2s ease-in-out;
+  height: 15rem;
+}
+
+.close-inner {
+  height: 0;
+}
+
+#active-btn {
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+}

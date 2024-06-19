@@ -1,0 +1,86 @@
+.box-input {
+  position: absolute;
+  width: 30vw;
+  height: 3vw;
+  border: 2px solid #000;
+  border-radius: 10px;
+  left: 10vw;
+  transition: all 0.4s ease-in-out;
+  padding: .8rem;
+  background: #fff;
+  top: 50vh;
+  opacity: 0;
+}
+
+.show-input {
+  top: 45vh;
+  opacity: 1;
+}
+
+.hidden-input {
+  top: 50vh;
+  opacity: 0;
+}
+
+.w-e-bar svg {
+  height: 20px;
+  width: 20px;
+}
+
+.real-input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+}
+
+.cover-screen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0000003a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.cover-screen p{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#editorBox {
+  width: 100%;
+  display: flex;
+}
+
+#editorPart{
+  width: 50%;
+}
+
+#showPart{
+  width: 50%;
+  border: 2px solid #000000;
+}
+
+.tip-tab {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip-tab > button {
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background: rgb(28, 28, 255);
+  color: #ffffff;
+  font-weight: 600;
+}
