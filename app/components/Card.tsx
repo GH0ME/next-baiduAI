@@ -30,7 +30,7 @@ const Card = () => {
     <Image id='img' src={MyAvatar} alt='uploading' priority />
     <h1>GHOME</h1>
     <h2>一名前端开发者</h2>
-    <h3>项目Github：<a href='https://baidu.com' target={'_blank'}>https://baidu.com</a></h3>
+    <h3>项目Github：<a href='https://github.com/GH0ME/next-baiduAI' target={'_blank'}>https://github.com/GH0ME/next-baiduAI</a></h3>
   </animated.div>
 }
 
