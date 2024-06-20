@@ -1,0 +1,7 @@
+{
+  "function":{
+    "pages/api/*":{
+      "maxDuration": 60
+    }
+  }
+}
