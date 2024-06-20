@@ -9,12 +9,15 @@ interface switchProps {
 }
 
 const Switch = ({model,setModel}:switchProps) => {
+  const mainBox = document.getElementsByTagName('main')[0]
   const changeModel = ()=>{
     if(model==='light'){
       localStorage.setItem('theme','dark')
+      mainBox.style.backgroundColor = "#6b6b6b"
       setModel('dark')
     }else{
       localStorage.setItem('theme','light')
+      mainBox.style.backgroundColor = "#ffffff"
       setModel('light')
     }
   }
